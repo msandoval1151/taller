@@ -23,6 +23,8 @@ import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
 import edu.usmp.fia.taller.common.bean.MallaCurricular.T_course;
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
 import edu.usmp.fia.taller.common.dao.modules.MysqlFactoryGeneral;
+import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.DAOFactoryConvalidacion;
+import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.MySqlFactoryConvalidacion;
 import edu.usmp.fia.taller.common.util.ThreadUtil;
 import edu.usmp.fia.taller.simulacionMatricula.MySql.MySqlFactorySMatricula;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
@@ -216,6 +218,13 @@ public class MySqlDAOFactory extends DAOFactory {
 	public DAOFactoryGeneral getGeneral() { return new MysqlFactoryGeneral(); }
 	public DAOFactorySMatricula getSimulacionMatricula() { return new MySqlFactorySMatricula(); }
 	//public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
+
+
+	@Override
+	public DAOFactoryConvalidacion getConvalidacion() {
+		// TODO Auto-generated method stub
+		return new MySqlFactoryConvalidacion();
+	}
 
 
 }

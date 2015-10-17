@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
+import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.DAOFactoryConvalidacion;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
 
 
@@ -19,7 +20,7 @@ public abstract class DAOFactory {
 	public abstract DAOFactoryGeneral getGeneral();
 	public abstract DAOFactorySMatricula getSimulacionMatricula();
 	//public abstract DAOFactoryMCurricular getMallaCurricular();
-
+	public abstract DAOFactoryConvalidacion getConvalidacion();
 	
 	
 	
