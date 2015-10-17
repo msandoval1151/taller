@@ -34,51 +34,22 @@
 		</header>
 
 		<div class="sidebar-user-info">
-			<div class="sui-normal">
-				<a href="#" class="user-link"> <img
-					src="<%=request.getServletContext().getContextPath() %>/resources/assets/images/thumb-1@2x.png" alt="" class="img-circle" />
-					<span>Bienvenido,</span> <strong><%=oPersona.getNombre() + " " + oPersona.getApePaterno()%></strong>
-				</a>
-			</div>
 			<div class="sui-hover inline-links animate-in">
-				<!-- You can remove "inline-links" class to make links appear vertically, class "animate-in" will make A elements animateable when click on user profile -->
-
 				<a href="correo.html"> <i class="entypo-mail"></i> Correo
 				</a> <a href="login?f=logout""> <i class="entypo-lock"></i> Salir
 				</a> <span class="close-sui-popup">&times;</span>
 				<!-- this is mandatory -->
 			</div>
 		</div>
-
+		
 		<ul id="main-menu" class="main-menu">
 			<li><a href="<%=request.getContextPath()%>/SimulacionMatricula/index.jsp"><i class="entypo-gauge"></i><span class="title">INICIO</span></a></li>
-			<li><a href="#"> <i class="entypo-gauge"></i><span class="title">SIMULACI&Oacute;N DE MATRICULA</span></a>
-				<ul>
-					<li><a href="<%=request.getContextPath()%>/SimulacionInicial"><span class="title"> Simulaci&oacute;n Inicial</span></a></li>
-					<li><a href="<%=request.getContextPath()%>/SimularCursosConcluyentes"><span class="title">Matricula Probable</span></a></li>
-					<li><a href="<%=request.getContextPath()%>/SimularCursosPreferidos"><span class="title">Matricula Preferible</span></a></li>
-					<li>
-						<a href="index.jsp"> <i class="entypo-gauge"></i><span class="title">MATRICULA PROGRESIVA</span></a>
-						<ul>
-							<li><a href="<%=request.getContextPath()%>/ListarAlumnos"><span class="title">Listado Alumnos</span></a></li>
-							<li><a href="<%=request.getContextPath()%>/ListarCursos"><span class="title">Listado Cursos</span></a></li>
-							<li><a href="#"> <span class="title">Demanda de Cursos preferidos </span></a></li>
-							<li><a href="#"> <span class="title">Solicitudes y Observaciones</span></a></li>
-							<li><a href="#"> <span class="title">Resultado de Matricula Progresiva</span></a>
-						</li>
-						</ul>
-					</li>
-					<li><a href="index.jsp"> <i class="entypo-gauge"></i><span class="title">MAT PROGRESIVA-ALUMNO</span></a>
-						<ul>
-							<li><a href="<%=request.getContextPath()%>/AlumnoListarCursosAptos"><span class="title">Listado Cursos Aptos</span></a></li>
-							<li><a href="<%=request.getContextPath()%>/AlumnoListarCursosPropuestos"><span class="title">Listado Cursos Propuestos</span></a></li>
-							<li><a href="<%=request.getContextPath()%>/ListarCursos"><span class="title">Generar Pre-Matricula</span></a></li>
-							<li><a href="<%=request.getContextPath()%>/ListarCursos"><span class="title">Actualizar Pre-Matricula</span></a></li>
-							<li><a href="#"> <span class="title">Solicitudes y Observaciones</span></a></li>
-						</ul>
-					</li>
-				</ul>
-			</li>
+			<jsp:include page="/resources/include/menu/simumatricula.jsp"></jsp:include>
+			<jsp:include page="/resources/include/menu/reg-docente.jsp"></jsp:include>
+			<jsp:include page="/resources/include/menu/conv-cursos.jsp"></jsp:include>
+			<jsp:include page="/resources/include/menu/elaboracion-horario.jsp"></jsp:include>
+			<jsp:include page="/resources/include/menu/malla-curricular.jsp"></jsp:include>
+			<jsp:include page="/resources/include/menu/plan-curricular.jsp"></jsp:include>
 		</ul>
 	</div>
 
