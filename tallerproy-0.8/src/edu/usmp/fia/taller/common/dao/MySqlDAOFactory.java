@@ -28,6 +28,9 @@ import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.MySqlFactoryCon
 import edu.usmp.fia.taller.common.util.ThreadUtil;
 import edu.usmp.fia.taller.simulacionMatricula.MySql.MySqlFactorySMatricula;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
+import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.DAOFactoryElabHorarios;
+import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.MysqlFactoryElabHorarios;
+
 
 
 public class MySqlDAOFactory extends DAOFactory {
@@ -218,6 +221,7 @@ public class MySqlDAOFactory extends DAOFactory {
 	public DAOFactoryGeneral getGeneral() { return new MysqlFactoryGeneral(); }
 	public DAOFactorySMatricula getSimulacionMatricula() { return new MySqlFactorySMatricula(); }
 	//public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
+	public DAOFactoryElabHorarios getElaboracionHorario() {return new MysqlFactoryElabHorarios();}
 
 
 	@Override

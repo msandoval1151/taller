@@ -19,6 +19,7 @@ public abstract class DAOFactory {
 	
 	public abstract DAOFactoryGeneral getGeneral();
 	public abstract DAOFactorySMatricula getSimulacionMatricula();
+	public abstract DAOFactoryElabHorarios getElaboracionHorario();
 	//public abstract DAOFactoryMCurricular getMallaCurricular();
 	public abstract DAOFactoryConvalidacion getConvalidacion();
 	
