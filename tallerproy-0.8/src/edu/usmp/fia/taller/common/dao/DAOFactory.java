@@ -5,7 +5,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import edu.usmp.fia.taller.common.bean.MallaCurricular.T_course;
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
+import edu.usmp.fia.taller.mallacurricular.interfaces.DAOFactoryMCurricular;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
 
 
@@ -18,7 +20,7 @@ public abstract class DAOFactory {
 	
 	public abstract DAOFactoryGeneral getGeneral();
 	public abstract DAOFactorySMatricula getSimulacionMatricula();
-	//public abstract DAOFactoryMCurricular getMallaCurricular();
+	public abstract DAOFactoryMCurricular<T_course> getMallaCurricular();
 
 	
 	

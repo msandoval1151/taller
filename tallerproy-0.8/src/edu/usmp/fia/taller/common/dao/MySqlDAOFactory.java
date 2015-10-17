@@ -24,6 +24,8 @@ import edu.usmp.fia.taller.common.bean.MallaCurricular.T_course;
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
 import edu.usmp.fia.taller.common.dao.modules.MysqlFactoryGeneral;
 import edu.usmp.fia.taller.common.util.ThreadUtil;
+import edu.usmp.fia.taller.mallacurricular.MySql.MySqlFactoryMCurricular;
+import edu.usmp.fia.taller.mallacurricular.interfaces.DAOFactoryMCurricular;
 import edu.usmp.fia.taller.simulacionMatricula.MySql.MySqlFactorySMatricula;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
 
@@ -215,7 +217,8 @@ public class MySqlDAOFactory extends DAOFactory {
 	
 	public DAOFactoryGeneral getGeneral() { return new MysqlFactoryGeneral(); }
 	public DAOFactorySMatricula getSimulacionMatricula() { return new MySqlFactorySMatricula(); }
-	//public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
+	public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
+
 
 
 }
