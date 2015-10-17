@@ -26,7 +26,6 @@
 			
 			
 			<!-- Contenido -->
-			Contenido
 
 			<jsp:include page="/resources/include/footer.jsp"></jsp:include>
 		</div>
