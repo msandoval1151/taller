@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
 import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.DAOFactoryConvalidacion;
+import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.DAOFactoryElabHorarios;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
 
 
