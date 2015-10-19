@@ -18,7 +18,6 @@ import com.jcraft.jsch.Session;
 import com.mysql.jdbc.CallableStatement;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
 
 import edu.usmp.fia.taller.common.bean.MallaCurricular.T_course;
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
@@ -35,7 +34,6 @@ import edu.usmp.fia.taller.common.dao.modules.registrodocente.MysqlFactoryRegDoc
 import edu.usmp.fia.taller.common.util.ThreadUtil;
 import edu.usmp.fia.taller.mallacurricular.MySql.MySqlFactoryMCurricular;
 import edu.usmp.fia.taller.mallacurricular.interfaces.DAOFactoryMCurricular;
-
 import edu.usmp.fia.taller.simulacionMatricula.MySql.MySqlFactorySMatricula;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
 
@@ -46,55 +44,6 @@ public class MySqlDAOFactory extends DAOFactory {
 	protected static final Logger log = LogManager.getLogger(MySqlDAOFactory.class);
 
 	public static Session _session = null;
-	
-	//private Connection connection = null;
-	/*
-	public Connection getConnection() {
-		if(connection==null){
-			try {
-				String userName = null;
-				String password = null;
-				//String url = "jdbc:mysql://localhost:3306/bd_taller_proyectos";
-				//String url = "jdbc:mysql://localhost:3306/bdtaller201502";
-				//String url = "jdbc:mysql://TALLER:3306/bd_seguridad_proyectos"; //Server FIA
-				String url = "jdbc:mysql://127.12.131.2:3306/bdtaller201502"; //Server Openshit
-				Class.forName ("com.mysql.jdbc.Driver").newInstance();
-				
-				switch (ThreadUtil.getCallerModule()) {
-				case 0:
-					//userName = "root";
-					//password = "root";
-					//userName = "operador"; 
-					//password = "operadorBD";
-					userName = "adminnL3Z24a";
-					password = "wtRtWYXxZqIu";
-					break;
-				case 1:
-					userName = "seguimiento";
-					password = "seguimiento";
-					break;
-				case 2:
-					userName = "ejemplo";
-					password = "ejemplo";
-					break;
-				default:
-					break;
-				}
-				
-				connection = DriverManager.getConnection (url, userName, password);
-				System.out.println ("Database connection established");
-				
-
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-		return connection;
-	}
-	*/
-	
-	
-	
 	
 	//obtenerConexion
 	public static Connection obtenerConexion(){

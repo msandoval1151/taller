@@ -13,6 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<title>Taller Proyectos</title>
+	
 	<jsp:include page="/resources/include/header-resources.jsp"></jsp:include>
 </head>
 
@@ -24,13 +25,11 @@
 <body class="page-body skin-red">
 	<div class="page-container">
 		<jsp:include page="/resources/include/sidebar-menu.jsp"></jsp:include>
+		
 		<div class="main-content">
+		
 			<jsp:include page="/resources/include/profile-bar.jsp"></jsp:include>
 			
-
-
-
-
 			<ol class="breadcrumb bc-3">
 				<li><a href="#"><i class="fa-home"></i>Simulacion Matricula</a>
 				</li>
@@ -61,9 +60,9 @@
 					<div class="panel panel-dark" data-collapsed="1">
 
 						<!-- panel head -->
-						<div class="panel-heading">
+						<div class="panel-heading active">
 							<div class="panel-title">
-								<strong>SIMULACION INICIAL</strong>
+								<strong>SIMULACION CURSOS PREFERIDOS</strong>
 							</div>
 
 							<div class="panel-options">

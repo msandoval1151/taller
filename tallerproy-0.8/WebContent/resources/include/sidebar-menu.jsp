@@ -13,7 +13,7 @@
 		<header class="logo-env">
 			<!-- logo -->
 			<div class="logo">
-				<a href="SimulacionMatricula/index.jsp">
+				<a href="<%=request.getServletContext().getContextPath()%>/welcome.jsp">
 					<h1 style="color: #FCFDFF;">
 						<strong>USMP</strong>
 					</h1>
@@ -43,7 +43,7 @@
 		</div>
 		
 		<ul id="main-menu" class="main-menu">
-			<li><a href="<%=request.getContextPath()%>/SimulacionMatricula/index.jsp"><i class="entypo-gauge"></i><span class="title">INICIO</span></a></li>
+			<li><a href="<%=request.getContextPath()%>/welcome.jsp"><i class="entypo-gauge"></i><span class="title">INICIO</span></a></li>
 			<jsp:include page="/resources/include/menu/simumatricula.jsp"></jsp:include>
 			<jsp:include page="/resources/include/menu/reg-docente.jsp"></jsp:include>
 			<jsp:include page="/resources/include/menu/conv-cursos.jsp"></jsp:include>

@@ -12,8 +12,8 @@ import edu.usmp.fia.taller.common.action.HttpMethodType;
 import edu.usmp.fia.taller.common.action.RequireLogin;
 import edu.usmp.fia.taller.common.bean.SimulacionMatricula.Area;
 
-@WebServlet("/SimularCursosPreferidos")
-public class SimularCursosPreferidos extends ActionServlet {
+@WebServlet("/SimulacionPreferido")
+public class SimulacionPreferido extends ActionServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -34,7 +34,7 @@ public class SimularCursosPreferidos extends ActionServlet {
 			listaArea = factory.getSimulacionMatricula().SimulacionCursosPreferidos(condicion);
 
 			request.setAttribute("listaAreaCurso", listaArea);
-			request.getRequestDispatcher("SimulacionMatricula/SimularCursosPreferidos.jsp").forward(request, response);
+			request.getRequestDispatcher("SimulacionMatricula/SimulacionPreferido.jsp").forward(request, response);
 			
 		} catch (Exception e) {
 			System.out.println("ERROR ====>> " +e.getMessage() + "");
