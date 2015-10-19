@@ -5,7 +5,7 @@
  */
 package edu.usmp.fia.taller.convalidacioncurso.dataaccess.interfaces;
 
-import edu.usmp.fia.taller.common.bean.Alumno;
+import edu.usmp.fia.taller.common.bean.convalidacioncurso.Alumno;
 import edu.usmp.fia.taller.common.bean.convalidacioncurso.Convalidacion;
 import edu.usmp.fia.taller.common.bean.convalidacioncurso.Curso;
 import java.util.List;
@@ -18,6 +18,6 @@ public interface DAOHistoriaConvalidacion {
     
     public List<Curso> listarcursos()throws Exception;
     public List<Convalidacion> listarconvalidaciones();
-    public List<Alumno> listaralumnos(Alumno alumno)throws Exception;
+    public List<Alumno> listaralumnos(Alumno wAlumno)throws Exception;
     public Alumno obtenerDatosAlumno(Alumno wAlumno)throws Exception;
 }

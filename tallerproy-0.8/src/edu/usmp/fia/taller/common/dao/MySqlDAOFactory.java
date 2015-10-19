@@ -23,9 +23,16 @@ import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
 import edu.usmp.fia.taller.common.bean.MallaCurricular.T_course;
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
 import edu.usmp.fia.taller.common.dao.modules.MysqlFactoryGeneral;
+<<<<<<< HEAD
+import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.DAOFactoryConvalidacion;
+import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.MysqlFactoryConvalidacion;
+import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.DAOFactoryElabHorarios;
+import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.MysqlFactoryElabHorarios;
+=======
 import edu.usmp.fia.taller.common.util.ThreadUtil;
 import edu.usmp.fia.taller.mallacurricular.MySql.MySqlFactoryMCurricular;
 import edu.usmp.fia.taller.mallacurricular.interfaces.DAOFactoryMCurricular;
+>>>>>>> 2769213d86c83748dbb782542bdcda136f997f1a
 import edu.usmp.fia.taller.simulacionMatricula.MySql.MySqlFactorySMatricula;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
 
@@ -217,7 +224,21 @@ public class MySqlDAOFactory extends DAOFactory {
 	
 	public DAOFactoryGeneral getGeneral() { return new MysqlFactoryGeneral(); }
 	public DAOFactorySMatricula getSimulacionMatricula() { return new MySqlFactorySMatricula(); }
+<<<<<<< HEAD
+	//public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
+	public DAOFactoryElabHorarios getElaboracionHorario() {return new MysqlFactoryElabHorarios();}
+
+
+	@Override
+	public DAOFactoryConvalidacion getConvalidacion() {
+		// TODO Auto-generated method stub
+		return new MysqlFactoryConvalidacion();
+	}
+
+
+=======
 	public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
+>>>>>>> 2769213d86c83748dbb782542bdcda136f997f1a
 
 
 

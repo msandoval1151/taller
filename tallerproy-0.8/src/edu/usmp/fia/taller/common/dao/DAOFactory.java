@@ -20,8 +20,14 @@ public abstract class DAOFactory {
 	
 	public abstract DAOFactoryGeneral getGeneral();
 	public abstract DAOFactorySMatricula getSimulacionMatricula();
+<<<<<<< HEAD
+	public abstract DAOFactoryElabHorarios getElaboracionHorario();
+	//public abstract DAOFactoryMCurricular getMallaCurricular();
+	public abstract DAOFactoryConvalidacion getConvalidacion();
+=======
 	public abstract DAOFactoryMCurricular<T_course> getMallaCurricular();
 
+>>>>>>> 2769213d86c83748dbb782542bdcda136f997f1a
 	
 	
 	

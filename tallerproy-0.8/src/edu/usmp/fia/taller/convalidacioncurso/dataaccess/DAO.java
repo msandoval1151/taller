@@ -18,7 +18,7 @@ public class DAO extends MySqlDAOFactory{
 
     protected void Conectar(boolean wTransaccion) throws Exception {
             
-    this.conexion = (Connection) getConexion();
+    this.conexion = (Connection) MySqlDAOFactory.obtenerConexion();
 
         if (wTransaccion == true) {
             this.conexion.setAutoCommit(false);
