@@ -807,7 +807,7 @@ public class MySqlFactoryMCurricular implements DAOFactoryMCurricular<T_course> 
 			StringBuffer sentencia=new StringBuffer();
 			
 			
-sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join  T_curso_mencion cm on c.id=cm.curso_id where mencion_id='1'");
+sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join  t_curso_mencion cm on c.id=cm.curso_id where mencion_id='1'");
 			
 			PreparedStatement ps = con.prepareStatement(sentencia.toString());
 			ResultSet rs = ps.executeQuery();
@@ -824,7 +824,47 @@ sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join
 				curso.setMencion(rs.getInt("cm.mencion_id"));
 			//	curso.setT_course_id(rs.getInt("t_course_id"));
 				cursos.add(curso);
-
+				
+				if (curso.getId() == 90861) {
+					curso.setLeft("681.641px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 90085) {
+					curso.setLeft("813.969px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 91119) {
+					curso.setLeft("813.969px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 90548) {
+					curso.setLeft("946.297px");	
+					curso.setTop("317.5px");
+				}
+				if (curso.getId() == 90116) {
+					curso.setLeft("946.297px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 90934) {
+					curso.setLeft("946.297px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 90670) {
+					curso.setLeft("1069.95px");	
+					curso.setTop("249.5px");
+				}
+				if (curso.getId() == 91122) {
+					curso.setLeft("1069.95px");
+					curso.setTop("317.5px");
+				}
+				if (curso.getId() == 90088) {
+					curso.setLeft("1069.95px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 90933) {
+					curso.setLeft("1194.61px");	
+					curso.setTop("249.5px");
+				}
 			}
 
 		} catch (Exception e) {
@@ -1278,7 +1318,7 @@ sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join
 			StringBuffer sentencia=new StringBuffer();
 			
 			
-			sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join  T_curso_mencion cm on c.id=cm.curso_id where mencion_id='3'");
+			sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join  t_curso_mencion cm on c.id=cm.curso_id where mencion_id='3'");
 			
 			PreparedStatement ps = con.prepareStatement(sentencia.toString());
 			ResultSet rs = ps.executeQuery();
@@ -1294,6 +1334,47 @@ sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join
 				//curso.setT_cycle_id(rs.getInt("pcd.ciclo_id"));
 				curso.setMencion(rs.getInt("cm.mencion_id"));
 			//	curso.setT_course_id(rs.getInt("t_course_id"));
+				if (curso.getId() == 90671) {
+					curso.setLeft("681.641px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 90665) {
+					curso.setLeft("813.969px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 90672) {
+					curso.setLeft("813.969px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 90861) {
+					curso.setLeft("946.297px");	
+					curso.setTop("317.5px");
+				}
+				if (curso.getId() == 90659) {
+					curso.setLeft("946.297px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 91124) {
+					curso.setLeft("946.297px");	
+					curso.setTop("453.5px");
+				}
+				
+				if (curso.getId() == 90085) {
+					curso.setLeft("1069.95px");	
+					curso.setTop("249.5px");
+				}
+				if (curso.getId() == 90660) {
+					curso.setLeft("1069.95px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 90658) {
+					curso.setLeft("1069.95px");	
+					curso.setTop("317.5px");
+				}
+				if (curso.getId() == 90666) {
+					curso.setLeft("1194.61px");	
+					curso.setTop("317.5px");
+				}
 				cursos.add(curso);
 
 			}
@@ -1756,7 +1837,7 @@ sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join
 			StringBuffer sentencia=new StringBuffer();
 			
 			
-			sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join  T_curso_mencion cm on c.id=cm.curso_id where mencion_id='2'");
+			sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join  t_curso_mencion cm on c.id=cm.curso_id where mencion_id='2'");
 					
 			PreparedStatement ps = con.prepareStatement(sentencia.toString());
 			ResultSet rs = ps.executeQuery();
@@ -1774,6 +1855,47 @@ sentencia.append("select c.id, c.nombre, cm.mencion_id from t_curso c inner join
 			//	curso.setT_course_id(rs.getInt("t_course_id"));
 				cursos.add(curso);
 
+				if (curso.getId() == 90675) {
+					curso.setLeft("681.641px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 91119) {
+					curso.setLeft("813.969px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 90676) {
+					curso.setLeft("813.969px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 90179) {
+					curso.setLeft("1194.61px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 90548) {
+					curso.setLeft("946.297px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 90677) {
+					curso.setLeft("946.297px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 90088) {
+					curso.setLeft("1069.95px");	
+					curso.setTop("249.5px");
+				}
+				if (curso.getId() == 90674) {
+					curso.setLeft("1069.95px");	
+					curso.setTop("385.5px");
+				}
+				if (curso.getId() == 90678) {
+					curso.setLeft("1069.95px");	
+					curso.setTop("453.5px");
+				}
+				if (curso.getId() == 90670) {
+					curso.setLeft("1194.61px");	
+					curso.setTop("249.5px");
+				}
+				
 			}
 
 		} catch (Exception e) {

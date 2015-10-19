@@ -7,12 +7,7 @@ import java.sql.ResultSet;
 
 import edu.usmp.fia.taller.common.bean.MallaCurricular.T_course;
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
-<<<<<<< HEAD
 import edu.usmp.fia.taller.mallacurricular.interfaces.DAOFactoryMCurricular;
-=======
-import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.DAOFactoryConvalidacion;
-import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.DAOFactoryElabHorarios;
->>>>>>> eff2e654836dea30fc818acae02276ca72366d76
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
 
 
@@ -25,14 +20,8 @@ public abstract class DAOFactory {
 	
 	public abstract DAOFactoryGeneral getGeneral();
 	public abstract DAOFactorySMatricula getSimulacionMatricula();
-<<<<<<< HEAD
 	public abstract DAOFactoryMCurricular<T_course> getMallaCurricular();
 
-=======
-	public abstract DAOFactoryElabHorarios getElaboracionHorario();
-	//public abstract DAOFactoryMCurricular getMallaCurricular();
-	
->>>>>>> eff2e654836dea30fc818acae02276ca72366d76
 	
 	
 	
