@@ -1,4 +1,3 @@
-  
 <%
 	String json = (String)request.getAttribute("json");
 	String horas = (String)request.getAttribute("horas");
@@ -50,16 +49,8 @@
 %>
 
 
-<body class="page-body skin-red">
-  <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-        <div class="list-group profesores">
-          <a href="#" class="list-group-item active">Elige un Profesor</a>
-        </div>
-    </div>
-  </div>
-</div>
+<body class="page-body skin-red" style="padding-top: -0;">
+
 	<div class="page-container">
 		<jsp:include page="/resources/include/sidebar-menu.jsp"></jsp:include>
 		<div class="main-content">
@@ -74,7 +65,7 @@
   <h1>Usted está trabajando en la versión: <%=version %></h1>
 
 
-    <div style="padding:0 100px 0 100px;">
+    <div>
       <div class="row" style="text-align:center;">
         <ul class="nav nav-tabs">
 		  <li role="presentation" <% if(cycle.equalsIgnoreCase("01")){ %>class="active"<% } %>><a href="ElaboracionHorariosServlet?f=leerHorario&cycle=01">Ciclo I</a></li>
@@ -104,7 +95,7 @@
         <div class="col-md-9">
            <table class="table table-striped table-bordered">
               <tr>
-                  <th width="30px">Horas</th>
+                  <th width="120px">Horas</th>
                   <th width="100px">Lunes</th>
                   <th width="100px">Martes</th>
                   <th width="100px">Miércoles</th>
@@ -597,13 +588,24 @@ function guardarDatosTmp(){
 
 </script>
 			<!--FIN CONTENIDO -->
+		<div>		
 			<jsp:include page="/resources/include/footer.jsp"></jsp:include>
 		</div>
+		<div>
 		<jsp:include page="/resources/include/chat.jsp"></jsp:include>
 		</div>
-	</div>
-
-	<jsp:include page="/resources/include/footer-resources.jsp"></jsp:include>
 	
+	<div>
+	<jsp:include page="/resources/include/footer-resources.jsp"></jsp:include>
+  </div>
+  <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="list-group profesores">
+          <a href="#" class="list-group-item active">Elige un Profesor</a>
+        </div>
+    </div>
+  </div>
+</div>	
 </body>
 </html>
