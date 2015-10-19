@@ -47,7 +47,7 @@
 %>
 
 
-<body class="page-body skin-red">
+<body class="page-body skin-red" style="padding-top: -0;">
 	<div class="page-container">
 		<jsp:include page="/resources/include/sidebar-menu.jsp"></jsp:include>
 		<div class="main-content">
@@ -57,7 +57,7 @@
 			
 			<!-- Contenido -->
       <div> 
-<div class="container">
+<div >
   <div class="list-group profesores">
     <a href="#" class="list-group-item disabled">Elige una versión</a>
     
