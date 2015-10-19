@@ -27,6 +27,7 @@
 			
 			<!-- Contenido -->
 
+			<!-- Fin contenido -->
 			<jsp:include page="/resources/include/footer.jsp"></jsp:include>
 		</div>
 		<jsp:include page="/resources/include/chat.jsp"></jsp:include>

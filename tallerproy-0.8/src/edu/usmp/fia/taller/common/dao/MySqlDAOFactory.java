@@ -27,6 +27,9 @@ import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.DAOFactoryConva
 import edu.usmp.fia.taller.common.dao.modules.convalidacioncurso.MysqlFactoryConvalidacion;
 import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.DAOFactoryElabHorarios;
 import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.MysqlFactoryElabHorarios;
+import edu.usmp.fia.taller.common.dao.modules.registrodocente.DAOFactoryRegDocente;
+import edu.usmp.fia.taller.common.dao.modules.registrodocente.MysqlFactoryRegDocente;
+
 
 import edu.usmp.fia.taller.common.util.ThreadUtil;
 import edu.usmp.fia.taller.mallacurricular.MySql.MySqlFactoryMCurricular;
@@ -176,13 +179,15 @@ public class MySqlDAOFactory extends DAOFactory {
 
 	//public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
 	public DAOFactoryElabHorarios getElaboracionHorario() {return new MysqlFactoryElabHorarios();}
-
+	public DAOFactoryRegDocente getRegistroDocente() {return new MysqlFactoryRegDocente();}
 
 	@Override
 	public DAOFactoryConvalidacion getConvalidacion() {
 		// TODO Auto-generated method stub
 		return new MysqlFactoryConvalidacion();
 	}
+
+	
 
 
 
