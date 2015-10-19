@@ -17,9 +17,6 @@
 <jsp:include page="/resources/include/header-resources.jsp"></jsp:include>
 <script src="SimulacionMatricula/excellexport/excellentexport.js"></script>
 
-<script>
-	$.noConflict();
-</script>
 </head>
 
 <%
