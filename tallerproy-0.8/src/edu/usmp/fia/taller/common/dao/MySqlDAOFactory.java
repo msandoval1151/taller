@@ -13,21 +13,24 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 import com.jcraft.jsch.JSch;
-import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.mysql.jdbc.CallableStatement;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
 
-import edu.usmp.fia.taller.common.bean.MallaCurricular.T_course;
 import edu.usmp.fia.taller.common.dao.modules.DAOFactoryGeneral;
 import edu.usmp.fia.taller.common.dao.modules.MysqlFactoryGeneral;
+<<<<<<< HEAD
 import edu.usmp.fia.taller.common.util.ThreadUtil;
 import edu.usmp.fia.taller.mallacurricular.MySql.MySqlFactoryMCurricular;
 import edu.usmp.fia.taller.mallacurricular.interfaces.DAOFactoryMCurricular;
+=======
+import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.DAOFactoryElabHorarios;
+import edu.usmp.fia.taller.common.dao.modules.elaboracionhorario.MysqlFactoryElabHorarios;
+>>>>>>> eff2e654836dea30fc818acae02276ca72366d76
 import edu.usmp.fia.taller.simulacionMatricula.MySql.MySqlFactorySMatricula;
 import edu.usmp.fia.taller.simulacionMatricula.interfaces.DAOFactorySMatricula;
+
 
 
 public class MySqlDAOFactory extends DAOFactory {
@@ -217,7 +220,14 @@ public class MySqlDAOFactory extends DAOFactory {
 	
 	public DAOFactoryGeneral getGeneral() { return new MysqlFactoryGeneral(); }
 	public DAOFactorySMatricula getSimulacionMatricula() { return new MySqlFactorySMatricula(); }
+<<<<<<< HEAD
 	public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
+=======
+	//public DAOFactoryMCurricular getMallaCurricular() { return new MySqlFactoryMCurricular(); }
+	public DAOFactoryElabHorarios getElaboracionHorario() {return new MysqlFactoryElabHorarios();}
+
+
+>>>>>>> eff2e654836dea30fc818acae02276ca72366d76
 
 
 
