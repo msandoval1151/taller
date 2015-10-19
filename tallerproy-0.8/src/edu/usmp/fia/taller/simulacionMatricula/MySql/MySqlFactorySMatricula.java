@@ -1272,24 +1272,17 @@ public class MySqlFactorySMatricula implements DAOFactorySMatricula {
 		try {
 			
 			if (con!=null && !con.isClosed())
-			{
-				con.close();
-				con=null;
-			}
+				MySqlDAOFactory.close(con); con = null;
 			
 			if (sql!=null)
 				sql=null;
 			
 			if (ps!=null && !ps.isClosed())
-			{
-				ps.close();
-				ps=null;
-			}				
+				MySqlDAOFactory.close(ps); ps = null;
+				
 			if (rs!=null && !rs.isClosed())
-			{
-				rs.close();
-				rs=null;
-			}
+				MySqlDAOFactory.close(rs); rs = null;
+
 			
 		} catch (Exception e) {
 			throw new Exception("Error al limpiar Conexion" + e.getMessage());

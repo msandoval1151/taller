@@ -15,6 +15,7 @@
 <meta name="author" content="" />
 
 <title>Taller Proyectos</title>
+<jsp:include page="/resources/include/header-resources.jsp"></jsp:include>
 
 <link rel="stylesheet"
 	href="<%=request.getServletContext().getContextPath() %>/resources/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
@@ -36,6 +37,7 @@
 
 
 <script src="<%=request.getServletContext().getContextPath() %>/resources/assets/js/jquery-1.11.0.min.js"></script>
+>>>>>>> 6b31d60cbfb4f1e8c6593db9d3b9ce286cf81c7d
 <script>
 	$.noConflict();
 </script>
@@ -373,6 +375,9 @@
 		</div>
 	</div>
 
+<<<<<<< HEAD
+	<jsp:include page="/resources/include/footer-resources.jsp"></jsp:include>
+=======
 	<script src="<%=request.getServletContext().getContextPath() %>/resources/assets/js/gsap/main-gsap.js"></script>
 	<script
 		src="<%=request.getServletContext().getContextPath() %>/resources/assets/js/jquery-ui/js/jquery-ui-1.10.3.minimal.min.js"></script>
@@ -390,5 +395,6 @@
 	<!-- Demo Settings -->
 	<script src="<%=request.getServletContext().getContextPath() %>/resources/assets/js/neon-demo.js"></script>
 
+>>>>>>> 6b31d60cbfb4f1e8c6593db9d3b9ce286cf81c7d
 </body>
 </html>

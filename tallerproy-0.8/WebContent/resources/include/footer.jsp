@@ -1,4 +1,4 @@
 <!-- Footer -->
 <footer class="main">
-	&copy; 2014 <strong>SOID</strong> SOID Solution
+	&copy; 2015 <strong>SOID Solution</strong>	
 </footer>

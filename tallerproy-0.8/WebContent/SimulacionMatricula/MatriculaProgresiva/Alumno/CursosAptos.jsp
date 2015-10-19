@@ -16,6 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Taller Proyectos</title>
+<jsp:include page="/resources/include/header-resources.jsp"></jsp:include>
 
 <link rel="stylesheet"
 	href="<%=request.getServletContext().getContextPath() %>/resources/assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css">
@@ -37,6 +38,7 @@
 
 <script src="<%=request.getServletContext().getContextPath() %>/resources/assets/js/jquery-1.11.0.min.js"></script>
 
+>>>>>>> 6b31d60cbfb4f1e8c6593db9d3b9ce286cf81c7d
 <script>
 	$.noConflict();
 </script>
@@ -161,6 +163,10 @@
 		</div>
 
 		<div class="main-content">
+<<<<<<< HEAD
+			<jsp:include page="/resources/include/profile-bar.jsp"></jsp:include>
+			
+=======
 
 			<div class="row">
 
@@ -276,6 +282,7 @@
 
 			</div>
 
+>>>>>>> 6b31d60cbfb4f1e8c6593db9d3b9ce286cf81c7d
 			<hr />
 
 			<ol class="breadcrumb bc-3">

@@ -27,14 +27,10 @@
 		<div class="main-content">
 			<jsp:include page="/resources/include/profile-bar.jsp"></jsp:include>
 			
-
-
-
-
 			<ol class="breadcrumb bc-3">
 				<li><a href="#"><i class="fa-home"></i>Simulacion Matricula</a>
 				</li>
-				<li><a href="#">Simulacion Inicial</a></li>
+				<li><a href="#">Simulacion Probable</a></li>
 			</ol>
 
 			<h1>Simulacion Matricula</h1>
@@ -63,7 +59,7 @@
 						<!-- panel head -->
 						<div class="panel-heading">
 							<div class="panel-title">
-								<strong>SIMULACION INICIAL</strong>
+								<strong>SIMULACION PROBABLE</strong>
 							</div>
 
 							<div class="panel-options">
@@ -88,6 +84,9 @@
 										</tr>
 									</thead>
 									<%
+										if(listaArea!=null)
+										{
+									
 										for (int i = 0; i < listaArea.size(); i++) {
 									%>
 									<tbody>
@@ -110,6 +109,7 @@
 										%>
 									</tbody>
 									<%
+										}
 										}
 									%>
 								</table>
