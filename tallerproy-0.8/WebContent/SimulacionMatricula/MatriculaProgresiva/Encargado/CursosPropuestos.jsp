@@ -15,10 +15,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Taller Proyectos</title>
+
 <jsp:include page="/resources/include/header-resources.jsp"></jsp:include>
-<script>
-	$.noConflict();
-</script>
+
 </head>
 
 <%

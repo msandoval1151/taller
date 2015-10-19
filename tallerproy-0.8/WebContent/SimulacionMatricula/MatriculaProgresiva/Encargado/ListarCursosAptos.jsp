@@ -17,9 +17,6 @@
 
 <title>Taller Proyectos</title>
 <jsp:include page="/resources/include/header-resources.jsp"></jsp:include>
-<script>
-	$.noConflict();
-</script>
 
 </head>
 
