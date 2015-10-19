@@ -18,15 +18,15 @@
 <title>Registro Docente</title>
 	<jsp:include page="/resources/include/header-resources.jsp"></jsp:include>
 </head>
-
-<%
-	Usuario oUsuario = (Usuario) request.getSession(false).getAttribute(SessionParameters.USUARIO.text());
-	Persona oPersona = oUsuario.getPersona();
-%>
 <%
 Vector<Dia> listaDias=(Vector)request.getAttribute("dias"); 
 Vector<Hora> listaHoras=(Vector)request.getAttribute("horas");
 %>
+<%
+	Usuario oUsuario = (Usuario) request.getSession(false).getAttribute(SessionParameters.USUARIO.text());
+	Persona oPersona = oUsuario.getPersona();
+%>
+
 
 <body class="page-body skin-red">
 	<div class="page-container">
